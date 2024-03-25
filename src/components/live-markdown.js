@@ -48,7 +48,7 @@ export default function LiveMarkdown() {
   return (
     <div className="flex flex-wrap gap-4 justify-center p-5 mt-4">
       <div className="min-w-[300px] w-[600px] z-10">
-        <div className="w-full bg-slate-950 font-[Quicksand] text-xl md:text-2xl px-3 py-1 rounded-tr-md rounded-tl-md">
+        <div className="w-full bg-slate-950 font-[Quicksand] text-xl md:text-2xl lg:text-3xl px-3 py-2 rounded-tr-md rounded-tl-md">
           <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent font-bold">
             {" "}
             Markup Editor{" "}
@@ -74,20 +74,20 @@ export default function LiveMarkdown() {
         </div>
         <textarea
           autoFocus
-          className="w-full h-[300px] md:h-[500px] p-3 bg-slate-900 text-white overflow-auto font-[Montserrat]"
+          className="w-full h-[300px] md:h-[600px] p-3 bg-slate-900 text-white overflow-auto font-[Montserrat]"
           value={markdownInput}
           onChange={(e) => setMarkdownInput(e.target.value)}
           placeholder="Enter markdown here..."
         ></textarea>
       </div>
       <div className="min-w-[300px] w-[600px]">
-        <div className="w-full bg-slate-950 font-[Quicksand] text-2xl md:text-3xl px-3 py-1 rounded-tr-md rounded-tl-md">
+        <div className="w-full bg-slate-950 font-[Quicksand] text-2xl md:text-3xl lg:text-4xl px-3 py-2 rounded-tr-md rounded-tl-md">
           <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent font-bold">
             {" "}
             Preview{" "}
           </span>
         </div>
-        <div className="w-full h-[340px] md:h-[540px] bg-slate-900 text-white overflow-auto font-[Montserrat] p-3 text-base">
+        <div className="w-full h-[340px] md:h-[640px] bg-slate-900 text-white overflow-auto font-[Montserrat] p-3 text-base">
           <ReactMarkdown className="prose-base" remarkPlugins={[remarkGfm]}>
             {markdownInput}
           </ReactMarkdown>
