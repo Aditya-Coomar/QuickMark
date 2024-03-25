@@ -81,7 +81,7 @@ export default function LiveMarkdown() {
         ></textarea>
       </div>
       <div className="min-w-[300px] w-[600px]">
-        <div className="w-full bg-slate-950 font-[Quicksand] text-xl md:text-2xl px-3 py-1 rounded-tr-md rounded-tl-md">
+        <div className="w-full bg-slate-950 font-[Quicksand] text-2xl md:text-3xl px-3 py-1 rounded-tr-md rounded-tl-md">
           <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent font-bold">
             {" "}
             Preview{" "}
@@ -96,3 +96,18 @@ export default function LiveMarkdown() {
     </div>
   );
 }
+
+
+
+/* 
+
+# **This is a test**
+```
+function mycode(x) {
+    this.x = test;
+}
+```
+*Hello this is my first test for Markup Editor*
+![](https://sourcebae.com/blog/wp-content/uploads/2023/08/6.png)
+
+*/
