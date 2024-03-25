@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import LiveMarkdown from "./components/live-markdown";
+import Navbar from "./components/navbar";
+import "./App.css";
+import React from "react";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Helmet>
+        <script
+          src="https://kit.fontawesome.com/05168aa044.js"
+          crossOrigin="anonymous"
+        ></script>
+      </Helmet>
+      <div className="overflow-y-auto">
+        <Navbar />
+        <LiveMarkdown />
+      </div>
+    </main>
   );
 }
 
