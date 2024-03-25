@@ -61,6 +61,7 @@ export default function LiveMarkdown() {
                 className="p-1 text-center border-2 border-slate-900 hover:bg-gradient-to-r hover:from-teal-700 hover:to-cyan-700 hover:text-slate-950"
                 type="button"
                 key={button.index}
+                title={button.name}
               >
                 <i
                   class={`fa-solid fa-${button.name}`}
