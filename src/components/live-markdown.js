@@ -3,6 +3,18 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 export default function LiveMarkdown() {
+
+  const buttonType = [
+    { index: 1, name: "heading" },
+    { index: 2, name: "bold" },
+    { index: 3, name: "italic" },
+    { index: 5, name: "strikethrough" },
+    { index: 6, name: "code" },
+    { index: 7, name: "link" },
+    { index: 8, name: "image" },
+    { index: 9, name: "trash-can" },
+  ];
+  
   const [markdownInput, setMarkdownInput] = useState("");
   const handleMarkdownButton = (name) => {
     if (name === "bold") {
@@ -32,16 +44,7 @@ export default function LiveMarkdown() {
       setMarkdownInput("");
     }
   };
-  const buttonType = [
-    { index: 1, name: "heading" },
-    { index: 2, name: "bold" },
-    { index: 3, name: "italic" },
-    { index: 5, name: "strikethrough" },
-    { index: 6, name: "code" },
-    { index: 7, name: "link" },
-    { index: 8, name: "image" },
-    { index: 9, name: "trash-can" },
-  ];
+
   return (
     <div className="flex flex-wrap gap-4 justify-center p-5 mt-4">
       <div className="min-w-[300px] w-[600px] z-10">
@@ -93,26 +96,3 @@ export default function LiveMarkdown() {
     </div>
   );
 }
-
-/*
-const MarkComponent = ({ value }) => {
-  return (
-    <div className="text-white">
-      { value }
-    </div>
-    );
-};
-*/
-
-/* 
-
-# **This is a test**
-```
-function mycode(x) {
-    this.x = test;
-}
-```
-*Hello this is my first test for Markup Editor*
-![](https://sourcebae.com/blog/wp-content/uploads/2023/08/6.png)
-
-*/
