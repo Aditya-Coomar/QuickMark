@@ -9,6 +9,8 @@ export default function LiveMarkdown() {
     { index: 1, name: "heading" },
     { index: 2, name: "bold" },
     { index: 3, name: "italic" },
+    { index: 13, name: "list-ul"},
+    { index: 14, name: "list-ol"},
     { index: 4, name: "list-check" },
     { index: 5, name: "strikethrough" },
     { index: 6, name: "code" },
@@ -38,7 +40,7 @@ export default function LiveMarkdown() {
     } else if (name === "link") {
       setMarkdownInput(
         markdownInput +
-          " \n [This is a sample link and you may change the url](https://github.com/Aditya-Coomar)"
+          "  \n [This is a sample link and you may change the url](https://github.com/Aditya-Coomar)"
       );
     } else if (name === "image") {
       setMarkdownInput(
@@ -65,6 +67,16 @@ export default function LiveMarkdown() {
       setMarkdownInput(
         markdownInput +
           " \n | column 1 | column 2 | column 3 |   \n | ---- | --- | --- |  \n | row 1 | row 1 | row 1 |  \n | row 2 | row 2 | row 2 |  \n | row 3 | row 3 | row 3 |  \n"
+      );
+    } else if (name === "list-ul") {
+      setMarkdownInput(
+        markdownInput +
+          " \n - List item 1 \n - List item 2 \n - List item 3"
+      );
+    } else if (name === "list-ol") {  
+      setMarkdownInput(
+        markdownInput +
+          " \n 1. List item 1 \n 2. List item 2 \n 3. List item 3"
       );
     }
   }
@@ -122,13 +134,13 @@ export default function LiveMarkdown() {
               </button>
             ))}
             <button
-              className="p-1 col-span-3 text-center border-2 border-slate-900 hover:bg-gradient-to-r hover:from-teal-700 hover:to-cyan-700 hover:text-slate-950"
+              className="p-1 col-span-2 text-center border-2 border-slate-900 hover:bg-gradient-to-r hover:from-teal-700 hover:to-cyan-700 hover:text-slate-950"
               type="button"
               title="copy-as-markdown"
               onClick={copyMarkdownText}
-              ><span><i class="fa-brands fa-markdown"></i>&nbsp;</span> Copy Markdown Text</button>
+              ><span><i class="fa-brands fa-markdown"></i>&nbsp;</span> Copy Markdown</button>
             <button 
-            className="p-1 col-span-3 text-center border-2 border-slate-900 hover:bg-gradient-to-r hover:from-teal-700 hover:to-cyan-700 hover:text-slate-950" 
+            className="p-1 col-span-2 text-center border-2 border-slate-900 hover:bg-gradient-to-r hover:from-teal-700 hover:to-cyan-700 hover:text-slate-950" 
             type="button" title="copy-as-html" onClick={copyHtmlText}><span><i class="fa-brands fa-html5"></i>&nbsp;</span> Copy as HTML</button>
             
           </div>
