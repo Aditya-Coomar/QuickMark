@@ -117,7 +117,7 @@ export default function LiveMarkdown() {
           </span>
         </div>
         <div className="bg-slate-950 text-sm sm:text-base md:text-lg">
-          <div className="grid grid-cols-6 items-stretch gap-0 bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent font-bold">
+          <div className="grid grid-cols-4 sm:grid-cols-6 items-stretch gap-0 bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent font-bold">
             {buttonType.map((button) => (
               <button
                 className="p-1 text-center border-2 border-slate-900 hover:bg-gradient-to-r hover:from-teal-700 hover:to-cyan-700 hover:text-slate-950"
