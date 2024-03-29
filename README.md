@@ -5,7 +5,7 @@
 
 # Project Preview 
 - [x] <h2> Desktop View </h2>
-![image](https://github.com/Aditya-Coomar/QuickMark/assets/92925750/440e9b86-cc62-4f7c-9810-d6371d8ab9c1)
+![image](https://github.com/Aditya-Coomar/QuickMark/assets/92925750/570cc80e-faad-42f0-bbaa-1f04bf2cb828)
 
 
 - [x] <h2> Mobile View </h2>
