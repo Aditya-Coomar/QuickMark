@@ -20,7 +20,7 @@ export default function LiveMarkdown() {
     { index: 11, name: "trash-can" },
   ];
 
-  const [markdownInput, setMarkdownInput] = useState("");
+  const [markdownInput, setMarkdownInput] = useState("## **This is a Markup Editor** \n ``` \n function mycode() { \n alert('Executed Successfully'); \n } \n ``` \n | Feature | Status | \n | ---- | --- | \n | Styles | Running | \n | Logic | Running | \n \n ***Developed by Aditya Coomar*** \n ![](https://images6.alphacoders.com/994/994929.jpg) \n \n **You may clear all and come up with something amazing to display**");
   const [html, setHtml] = useState("");
 
   function handleMarkdownButton(name) {
@@ -97,7 +97,7 @@ export default function LiveMarkdown() {
 
   return (
     <div className="flex flex-wrap gap-4 justify-center p-5 mt-4">
-      <div className="min-w-[300px] w-[600px] z-10">
+      <div className="min-w-[300px] w-[600px] xl:w-[650px] 2xl:w-[750] z-10">
         <div className="w-full bg-slate-950 font-[Quicksand] text-xl md:text-2xl lg:text-3xl px-3 py-2 rounded-tr-md rounded-tl-md">
           <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent font-bold">
             {" "}
@@ -141,7 +141,7 @@ export default function LiveMarkdown() {
           placeholder="Enter markdown here..."
         ></textarea>
       </div>
-      <div className="min-w-[300px] w-[600px]">
+      <div className="min-w-[300px] w-[600px] xl:w-[650px] 2xl:w-[750]">
         <div className="w-full bg-slate-950 font-[Quicksand] text-2xl md:text-3xl lg:text-4xl px-3 py-2 rounded-tr-md rounded-tl-md">
           <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent font-bold">
             {" "}
