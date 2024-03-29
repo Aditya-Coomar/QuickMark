@@ -10,7 +10,8 @@
 
 
 - [x] <h2> Mobile View </h2>
-![image](https://github.com/Aditya-Coomar/QuickMark/assets/92925750/3f3fa58e-42f3-4e4e-a188-063ab62b6ded)
+![image](https://github.com/Aditya-Coomar/QuickMark/assets/92925750/33dc2662-4526-4ff8-89e5-84c21f83ba69)
+
 
 
 
