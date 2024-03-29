@@ -5,15 +5,18 @@
 
 # Project Preview 
 - [x] <h2> Desktop View </h2>
-![image](https://github.com/Aditya-Coomar/QuickMark/assets/92925750/570cc80e-faad-42f0-bbaa-1f04bf2cb828)
+![image](https://github.com/Aditya-Coomar/QuickMark/assets/92925750/0c0820ca-9508-42a8-ac85-a058c2cbc2de)
+
 
 
 - [x] <h2> Mobile View </h2>
-![image](https://github.com/Aditya-Coomar/QuickMark/assets/92925750/c248f412-e805-4803-961c-7d0fd0f06691)
+![image](https://github.com/Aditya-Coomar/QuickMark/assets/92925750/3f3fa58e-42f3-4e4e-a188-063ab62b6ded)
+
 
 
 - [x] <h2> Tablet View </h2>
-![image](https://github.com/Aditya-Coomar/QuickMark/assets/92925750/e181de8c-c01e-41c9-839b-8f3882485ba1)
+![image](https://github.com/Aditya-Coomar/QuickMark/assets/92925750/4b28ca59-8070-44e2-aba1-efdc49691310)
+
 
 <br>
 <br>
