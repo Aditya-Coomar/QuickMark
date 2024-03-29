@@ -38,12 +38,12 @@ export default function LiveMarkdown() {
     } else if (name === "link") {
       setMarkdownInput(
         markdownInput +
-          " \n [This is a sample link change link to change image](https://sourcebae.com)"
+          " \n [This is a sample link and you may change the url](https://github.com/Aditya-Coomar)"
       );
     } else if (name === "image") {
       setMarkdownInput(
         markdownInput +
-          " \n ![This is a sample image change url to change image](https://sourcebae.com/blog/wp-content/uploads/2023/08/6.png)"
+          " \n ![This is a sample image change url to change image](https://images6.alphacoders.com/994/994929.jpg)"
       );
     } else if (name === "heading") {
       setMarkdownInput(
@@ -161,15 +161,3 @@ export default function LiveMarkdown() {
   );
 }
 
-/* 
-
-# **This is a test**
-```
-function mycode(x) {
-    this.x = test;
-}
-```
-*Hello this is my first test for Markup Editor*
-![](https://sourcebae.com/blog/wp-content/uploads/2023/08/6.png)
-
-*/
